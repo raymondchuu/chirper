@@ -6,6 +6,7 @@ This projectw as designed with HTML, CSS, JS, jQuery and AJAX on the front-end, 
 
 ## Final Product
 ![alt text](https://github.com/raymondchuu/chirper/blob/master/public/images/Chirper%20desktop.png?raw=true)
+<br/>
 ![alt text](https://github.com/raymondchuu/chirper/blob/master/public/images/Chirper%20mobile.png?raw=true)
 
 ## Getting Started
