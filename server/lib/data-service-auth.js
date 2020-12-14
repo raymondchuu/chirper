@@ -34,19 +34,19 @@ module.exports.registerUser = (data) => {
             reject("Username, handle, or password cannot be empty or only white spaces!");
         }
 
-        if (data.handle[0] !== '@') {
+        else if (data.handle[0] !== '@') {
             reject("Handle must begin with @")
         }
 
-        if (data.password.length < 6) {
+        else if (data.password.length < 6) {
             reject("Password must be at least 6 characters long!");
         }
 
-        if (data.password !== data.password2) {
+        else if (data.password !== data.password2) {
             reject("Passwords do not match!");
         }
 
-        if (data.password === data.password2) {
+        else if (data.password === data.password2) {
             bcrypt.hash(data.password, 10)
             .then(hashVal => {
                 const newUser = new User({
