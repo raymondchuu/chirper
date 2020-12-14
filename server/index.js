@@ -2,7 +2,7 @@
 
 // Basic express setup:
 
-const PORT          = 8080 || process.env.PORT;
+const HTTP_PORT          = process.env.PORT || 8080;
 const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
@@ -82,8 +82,8 @@ app.get("/", ensureLogin, (req, res) => {
 
 dataServiceAuth.initialize()
 .then(() => {
-  app.listen(PORT, () => {
-    console.log("Example app listening on port " + PORT);
+  app.listen(HTTP_PORT, () => {
+    console.log("Example app listening on port " + HTTP_PORT);
   });
 })
 .catch((err) => {
