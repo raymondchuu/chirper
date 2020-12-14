@@ -1,0 +1,39 @@
+  <body>
+  <div id="desktop-container">
+    <!-- Header -->
+    <header id="tweeter-header">
+      <div class="header-image">
+        <img src="/images/profile-hex.png" />
+      </div>
+      <br/>
+      <div class="header-name">
+        <h2>{{session.user.name}}</h2>
+      </div>
+      <a id="logout" href="/logout">Logout</a>
+    </header>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+
+      <section class="new-tweet">
+        <div id="error"></div>
+        <form  id="tweet-form">
+            <input type="hidden" id="name" name="name" value="{{session.user.name}}" />
+            <input type="hidden" id="handle" name="handle" value="{{session.user.handle}}" />
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div id="new-tweet-submit-div">
+                <button id="new-tweet-submit-btn" type="submit">Chirp</button>
+                <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+        </form>
+      </section>
+
+      <section id="tweet-container">
+        <article ></article>
+      </section>
+      <div id="scroll-top">
+        <ion-icon name="arrow-up-outline"></ion-icon>      
+      </div>
+    </main>
+
+    </body>

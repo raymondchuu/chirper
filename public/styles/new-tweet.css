@@ -1,0 +1,53 @@
+.new-tweet {
+    display: none;
+}
+
+#tweet-text {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #545149;
+    background-color: #f4f1ec;
+    resize: none;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#new-tweet-submit-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Bungee', cursive;
+}
+
+#new-tweet-submit-btn {
+    background-color: #4056A1;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+}
+
+#error {
+    color: red;
+    border: 3px solid red;
+    margin-top: 20px;
+    padding: 20px;
+    display: none;
+    width: auto;
+}
+
+#tweet-form {
+    margin-top: 5%;
+}
+
+.new-tweet textarea:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    #tweet-form {
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+}

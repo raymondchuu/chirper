@@ -1,0 +1,35 @@
+#tweeter-header {
+    height: 520px;
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    background-color: #cc8800;
+    background-image: url('../images/asfalt-light.png');
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+}
+
+.header-image {
+    z-index: 5;
+}
+
+.header-name h2{
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+#logout {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    #tweeter-header {
+        margin-top: 0;
+        width: 35%;
+        padding-top: 0;
+        height: 450px;
+    }
+}

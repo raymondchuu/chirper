@@ -1,0 +1,34 @@
+<div class="register-container">
+    <form class="register-form" method="POST" action="/register">
+        <h1>Create an account!</h1>
+        {{#if errorMessage}}
+        <div style="margin-bottom: 10px;">
+            <strong>Error: </strong> {{errorMessage}}
+        </div>
+        {{/if}}
+
+        {{#if successMessage}}
+        <div style="margin-bottom: 10px;">
+            <strong>Success! </strong> {{successMessage}}
+            <span>Click <a href="/login">here</a> to login!</span>
+        </div>
+        {{/if}}
+        <section class="register-section">
+            <input class="register-input" name="firstName" type="text" placeholder="First name" required /><br/>
+        </section>
+        <section class="register-section">
+            <input class="register-input" name="lastName" type="text" placeholder="Last name" required/><br/>
+        </section>
+        <section class="register-section">
+            <input class="register-input" name="handle" type="text" placeholder="@Tweeter Handle (start with @)" required/><br/>
+        </section>
+        <section class="register-section">
+            <input class="register-input" name="password" type="password" placeholder="Password" required /><br/>
+        </section>
+        <section class="register-section">
+            <input class="register-input" name="password2" type="password" placeholder="Confirm password" required /><br/>
+        </section>
+        <input class="register-submit" type="submit" value="Register" /><br/><br/>
+        <span>Already registered? Login <a href="/login">here!</a></span>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+<div class="register-container">
+    <form class="register-form" method="POST" action="/login">
+        <h1>Login</h1>
+        <span>Welcome back! Login to post your juiciest tweets!</span>
+        <br/><br/>
+        {{#if errorMessage}}
+        <div>
+            <strong>Error: </strong> {{errorMessage}}
+        </div>
+        {{/if}}
+        <br/>
+        <section class="register-section">
+            <input class="register-input" name="handle" type="text" placeholder="@Tweeter Handle" value="@" /><br/>
+        </section>
+        <section class="register-section">
+            <input class="register-input" name="password" type="password" placeholder="Password" /><br/>
+        </section>
+        <input class="register-submit" type="submit" value="Login" /><br/><br/>
+        <span>Don't have an account? Register one <a href="/register">here!</a></span>
+    </form>
+</div>
