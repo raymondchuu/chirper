@@ -1,8 +1,8 @@
 # Chirper Project
 
-Chirper is a simple, single-page Twitter clone.
+Chirper is a simple, single-page Twitter clone. You can visit the site at <https://chirper1.herokuapp.com/>.
 
-This projectw as designed with HTML, CSS, JS, jQuery and AJAX on the front-end, and Node, Express, MongoDB, and PostgreSQL in the back-end.
+This project was designed with HTML, CSS, JS, jQuery and AJAX on the front-end, and Node, Express, MongoDB, and PostgreSQL in the back-end.
 
 ## Final Product
 ![alt text](https://github.com/raymondchuu/chirper/blob/master/public/images/Chirper%20desktop.png?raw=true)
